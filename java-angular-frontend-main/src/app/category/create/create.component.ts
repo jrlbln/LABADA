@@ -30,7 +30,10 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl('', [Validators.required]),
-      description: new FormControl('', Validators.required)
+      address: new FormControl('', Validators.required),
+      number: new FormControl('', Validators.required),
+      status: new FormControl('', Validators.required)
+      
     });
   }
      

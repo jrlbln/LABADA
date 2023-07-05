@@ -13,19 +13,17 @@
       <tr>
         <th>Order ID</th>
         <th>Name</th>
-        <!-- <th>Contact Number</th> -->
+        <th>Contact Number</th>
         <th>Address</th>
-        <!-- <th>Status</th> -->
+        <th>Status</th>
         <th width="220px">Action</th>
       </tr>
       <tr *ngFor="let category of categories">
         <td>{{ category.id }}</td>
         <td>{{ category.name }}</td>
-        <!-- <td>{{ category.address }} -->
-        <td>{{ category.description }}
-        <!-- <td>{{ category.status}} -->
-         
-        </td>
+        <td>{{ category.number }}</td>
+        <td>{{ category.address }}</td>
+        <td>{{ category.status }}</td>
         <td>
           <a href="#" [routerLink]="['/category/', category.id, 'view']" class="btn btn-info">View</a>
           <a href="#" [routerLink]="['/category/', category.id, 'edit']" class="btn btn-primary text-dark">Edit</a>

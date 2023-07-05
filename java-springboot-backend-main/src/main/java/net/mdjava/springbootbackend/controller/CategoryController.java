@@ -58,8 +58,9 @@ public class CategoryController {
         Category updateCategory = categoryRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Category does not exist with id: " + id));
         
         updateCategory.setName(categoryDetails.getName());
-        updateCategory.setDescription(categoryDetails.getDescription());
-        
+        updateCategory.setAddress(categoryDetails.getAddress());
+        updateCategory.setNumber(categoryDetails.getNumber());
+        updateCategory.setStatus(categoryDetails.getStatus());
         categoryRepository.save(updateCategory);
         
         return ResponseEntity.ok(updateCategory);

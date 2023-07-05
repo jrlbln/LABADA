@@ -32,6 +32,12 @@ public class Category {
     @Column(name = "name")
     private String name;
     
-    @Column(name = "description")
-    private String description;
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "number")
+    private String number;
+
+    @Column(name = "status")
+    private String status;
 }
