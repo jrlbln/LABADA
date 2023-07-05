@@ -33,7 +33,6 @@ export class CreateComponent implements OnInit {
       address: new FormControl('', Validators.required),
       number: new FormControl('', Validators.required),
       status: new FormControl('', Validators.required)
-      
     });
   }
      
